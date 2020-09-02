@@ -9,12 +9,9 @@ class Product < ActiveRecord::Base
 
 end
 
-before do
-        @products = Product.all
-end
-
 
 get '/' do
+  @products = Product.all
 	erb :index			
 end
 
