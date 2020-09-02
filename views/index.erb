@@ -6,9 +6,23 @@
 <div class="row">
 <% @products.each do |product| %>
 	<div class="col-md-3">
+		<div>
             <%= product.title %>
+        </div>
+        <div>
+            <img src="<%= product.path_to_image %>">
+        </div>
+        <div>
+        	<%= product.description %>
+        </div>
+        		<div>
+            <%= product.title %>
+        </div>
     </div>
 <% end %>
 </div>
+
+<br />
+<br />
 
 <button class="btn btn-primary" onclick="something()">Click Me!</button>
